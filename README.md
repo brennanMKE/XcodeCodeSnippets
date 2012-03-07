@@ -14,6 +14,12 @@ my work. My snippets focus on a few areas.
 * debugging
 * formatting
 
+To use the snippets you will want to place them in the following folder.
+
+~/Library/Developer/Xcode/UserData/CodeSnippets
+
+You may need to restart Xcode to see the change.
+
 I am open to feedback on improving this code or adding more code
 snippets which would compliment them.
 
