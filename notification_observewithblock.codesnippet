@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>notification_observewithblock</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+[[NSNotificationCenter defaultCenter] addObserverForName:&lt;#name#&gt; 
+                                                  object:nil 
+                                                   queue:[NSOperationQueue mainQueue] 
+                                              usingBlock:^(NSNotification *notification) {
+                                                  &lt;#code#&gt;
+                                              }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0BAEB827-439A-4989-BD78-784E6F7FCA6F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Observe a named notification using a block</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Notification: Observe by Name with Block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

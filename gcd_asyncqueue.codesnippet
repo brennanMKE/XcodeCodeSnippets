@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>gcd_asyncqueue</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+    dispatch_queue_t callerQueue = dispatch_get_current_queue();
+dispatch_queue_t &lt;#queueName#&gt; = dispatch_queue_create("&lt;#queueLabel#&gt;", NULL);
+dispatch_async(&lt;#queueName#&gt;, ^{
+        
+        // Do async work
+        
+        dispatch_async(callerQueue, ^{
+            
+            // Finish work on the caller's queue
+            
+        });
+    });
+dispatch_release(&lt;#queueName#&gt;);
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0CB5B30F-E8C4-46CE-A599-00C4BCEF8A22</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Runs an async queue</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GCD: Async Queue</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

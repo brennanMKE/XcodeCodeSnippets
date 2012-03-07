@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>gcd_dispatchafter</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, &lt;#ms#&gt; * NSEC_PER_SEC), dispatch_get_current_queue(), ^{
+    &lt;#code#&gt;
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>458B72CD-628B-4627-8676-6E374EEBA82C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Run some code ater a delay</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GCD: Dispatch After</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

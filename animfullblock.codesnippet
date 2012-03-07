@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>animfullblock</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIViewAnimationOptions options = UIViewAnimationOptionAllowUserInteraction;
+[UIView animateWithDuration:&lt;#duration#&gt; delay:0.0 options:options animations:^{
+    &lt;#code#&gt;
+            } completion:^(BOOL finished) {
+            }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>37E53BB3-2CE0-4F0F-93D7-8CE9D5B062E5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Animation block with all parameters</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Animation Block with Options</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
