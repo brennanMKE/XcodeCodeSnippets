@@ -15,7 +15,7 @@ I've created or collected the following code snippets to speed up my work. My sn
 
 To use the snippets you will want to place them in the following folder.
 
-'' ~/Library/Developer/Xcode/UserData/CodeSnippets
+~/Library/Developer/Xcode/UserData/CodeSnippets
 
 You may need to restart Xcode to see the change.
 
