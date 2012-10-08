@@ -9,7 +9,7 @@
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, retain) IBOutlet &lt;#type#&gt; *&lt;#name#&gt;;
+	<string>@property (retain, nonatomic) IBOutlet &lt;#type#&gt; *&lt;#name#&gt;;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D91CEB20-5E84-4ADE-B491-52C72E524A4A</string>

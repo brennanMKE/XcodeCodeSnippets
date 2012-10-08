@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>
-[[NSNotificationCenter defaultCenter] addObserverForName:&lt;#name#&gt; 
+self.&lt;#name#&gt;Observer = [[NSNotificationCenter defaultCenter] addObserverForName:&lt;#name#&gt; 
                                                   object:nil 
                                                    queue:[NSOperationQueue mainQueue] 
                                               usingBlock:^(NSNotification *notification) {

@@ -3,30 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blockmethod</string>
+	<string>deprecated</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)(NSString *message, NSError *error))&lt;#returnBlock#&gt; {
-    NSString *message = nil;
-    NSError *error = nil;
-    
-    // Note: run in an async queue
-    
-    &lt;#returnBlock#&gt;(message, error);
-    
-}
-</string>
+	<string>__attribute__ ((deprecated))</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>03E04BF1-75FA-4BE8-888C-2D6D761A1FD6</string>
+	<string>7C9D3872-0D01-4D11-ADFC-5E857E3E7840</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Method using block feature</string>
+	<string>Place at the end of a function definition.</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block: Method</string>
+	<string>Deprecated</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

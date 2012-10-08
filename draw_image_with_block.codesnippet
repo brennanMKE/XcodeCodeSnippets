@@ -3,30 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blockmethod</string>
+	<string>draw_image_with_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)(NSString *message, NSError *error))&lt;#returnBlock#&gt; {
-    NSString *message = nil;
-    NSError *error = nil;
+	<string>
+UIImage *image = [UIImage imageWithIdentifier:@"&lt;#CacheKey#&gt;" forSize:CGSizeMake(&lt;#width#&gt;, &lt;#height#&gt;) andDrawingBlock:^{
+
+    &lt;#code#&gt;
+        
+    }];
     
-    // Note: run in an async queue
-    
-    &lt;#returnBlock#&gt;(message, error);
-    
-}
+return [UIImage imageWithImage:image scaledToSize:CGSizeMake(&lt;#scalewidth#&gt;, &lt;#scaleheight#&gt;)];
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>03E04BF1-75FA-4BE8-888C-2D6D761A1FD6</string>
+	<string>801AC0C2-656A-4E2B-86AD-474643176268</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Method using block feature</string>
+	<string>Returns image from drawing code</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block: Method</string>
+	<string>Image Block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

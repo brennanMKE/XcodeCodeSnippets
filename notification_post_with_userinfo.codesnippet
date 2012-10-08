@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>notification_post_with_userinfo</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+NSDictionary *userInfo = [NSDictionary dictionaryWithObject:&lt;#object#&gt; 
+                                                     forKey:&lt;#key#&gt;];
+[[NSNotificationCenter defaultCenter] postNotificationName:&lt;#name#&gt; 
+                                                            object:nil
+                                                          userInfo:userInfo];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4A5786A5-922A-4F23-9AF9-C574CB143D90</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Send a notification with an optional object and user info dictionary</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Notification: Post with User Info</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -3,30 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blockmethod</string>
+	<string>section_header</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)(NSString *message, NSError *error))&lt;#returnBlock#&gt; {
-    NSString *message = nil;
-    NSError *error = nil;
-    
-    // Note: run in an async queue
-    
-    &lt;#returnBlock#&gt;(message, error);
-    
-}
-</string>
+	<string>#pragma mark - &lt;#Section Name#&gt;
+#pragma mark - </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>03E04BF1-75FA-4BE8-888C-2D6D761A1FD6</string>
+	<string>F2939C78-FBD4-47C8-8FE2-D6BA2C5EC29B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Method using block feature</string>
+	<string>Pragma marker for a section header</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block: Method</string>
+	<string>Section Header</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

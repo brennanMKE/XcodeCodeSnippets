@@ -3,30 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blockmethod</string>
+	<string>notification_observer_property</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)(NSString *message, NSError *error))&lt;#returnBlock#&gt; {
-    NSString *message = nil;
-    NSError *error = nil;
-    
-    // Note: run in an async queue
-    
-    &lt;#returnBlock#&gt;(message, error);
-    
-}
-</string>
+	<string>
+// observers are retained by the system
+@property (assign, nonatomic) id &lt;#name#&gt;Observer;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>03E04BF1-75FA-4BE8-888C-2D6D761A1FD6</string>
+	<string>E7F23134-E708-43E9-95D2-76952C2FD3E0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Method using block feature</string>
+	<string>Property to observe a notification</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block: Method</string>
+	<string>Notification: Observer Property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
