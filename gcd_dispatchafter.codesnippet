@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, &lt;#ms#&gt; * NSEC_PER_SEC), dispatch_get_current_queue(), ^{
+	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, &lt;#ms#&gt; * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
     &lt;#code#&gt;
     });</string>
 	<key>IDECodeSnippetIdentifier</key>
