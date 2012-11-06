@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>gcd_async_wait</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+dispatch_queue_t &lt;#queue#&gt; = dispatch_queue_create("&lt;#queue#&gt;", NULL);
+    dispatch_async(queue, ^ {
+        // do async work
+    });
+    
+    // do more work concurrently
+dispatch_sync(&lt;#queue#&gt;, ^{}); // wait for async block to finish
+//dispatch_release(&lt;#queue#&gt;); // not needed for ARC
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5A610228-3FC0-46B5-AFF0-5B601ED03F68</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Runs async block and waits before continuing</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GCD: Run Async and Wait</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
