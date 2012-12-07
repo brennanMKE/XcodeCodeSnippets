@@ -3,30 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>gcd_async_wait</string>
+	<string>blocknoparamsmethod</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-dispatch_queue_t &lt;#queue#&gt; = dispatch_queue_create("&lt;#queue#&gt;", NULL);
-    dispatch_async(queue, ^ {
-        // do async work
-    });
+	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)())&lt;#returnBlock#&gt; {
     
-    // do more work concurrently
-dispatch_sync(&lt;#queue#&gt;, ^{}); // wait for async block to finish
-//dispatch_release(&lt;#queue#&gt;); // not needed for ARC
+    &lt;#returnBlock#&gt;();
+}
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5A610228-3FC0-46B5-AFF0-5B601ED03F68</string>
+	<string>F7C9BFB4-0432-412D-B466-8C17119D8BBC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Runs async block and waits before continuing</string>
+	<string>Method using block feature</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>GCD: Run Async and Wait</string>
+	<string>Block: Method with no parameters</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

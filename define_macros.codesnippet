@@ -3,33 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>gcd_async_wait</string>
+	<string>define_macros</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-dispatch_queue_t &lt;#queue#&gt; = dispatch_queue_create("&lt;#queue#&gt;", NULL);
-    dispatch_async(queue, ^ {
-        // do async work
-    });
-    
-    // do more work concurrently
-dispatch_sync(&lt;#queue#&gt;, ^{}); // wait for async block to finish
-//dispatch_release(&lt;#queue#&gt;); // not needed for ARC
-</string>
+	<string>#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5A610228-3FC0-46B5-AFF0-5B601ED03F68</string>
+	<string>B04E18FF-467E-409B-9902-ABF9321F90E3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Runs async block and waits before continuing</string>
+	<string>Defines macros with various uses</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>GCD: Run Async and Wait</string>
+	<string>Define Macros</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
