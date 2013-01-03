@@ -1,4 +1,5 @@
 #!/bin/sh
 
-cp *.codesnippet ~/Library/Developer/Xcode/UserData/CodeSnippets/
+GitRoot="`dirname \"$0\"`"
+cp ${GitRoot}/*.codesnippet ~/Library/Developer/Xcode/UserData/CodeSnippets/
 

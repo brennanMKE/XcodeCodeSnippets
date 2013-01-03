@@ -1,4 +1,10 @@
+#!/bin/sh
 
+GitRoot="`dirname \"$0\"`"
+
+pushd .
+cd ${GitRoot}
 git pull
-ExportSnippets.command
+cp *.codesnippet ~/Library/Developer/Xcode/UserData/CodeSnippets/
+popd
 
