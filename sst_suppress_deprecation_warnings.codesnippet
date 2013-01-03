@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>suppress_deprecation_warnings</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+// deprecated method call
+#pragma GCC diagnostic warning "-Wdeprecated-declarations"</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AAFB25DE-FE39-4159-BFC4-296E93A2E7B2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Suppresses deprecation warning</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Suppress deprecation warning</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
