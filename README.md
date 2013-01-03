@@ -23,12 +23,13 @@ You will need to restart Xcode to see the change.
 
 I am open to feedback on improving this code or adding more code snippets which would compliment them.
 
-## Future Updates
+## Filename Prefix
 
-I realize that it would be useful combine this collection of code snippets with others which I have found on GitHub
-and for others to carefully include mine with their collection. I think I will start preparing a naming convention
-so that my collection can be safely identified so the included import/export scripts can handle pulling updates
-from GitHub and automatically copying the updates in place without conflicting with other snippets.
+The filenames have a prefix of SST for SmallSharpTools, which is my company. This is done to make it easier to
+use these snippets alongside other snippets you may want to use either that you created or another GitHub repo.
+A script named GitUpdate.command is included which will pull the latest from GitHub and copy the code snippets
+in place. If you were to automate this script you could automatically stay current with these snippets. Updates
+are made periodically to add new snippets or to adjust snippets due to a bug or changes to iOS/Mac APIs.
 
 ## Caveat
 

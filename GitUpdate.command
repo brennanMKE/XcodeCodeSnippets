@@ -1,0 +1,4 @@
+
+git pull
+ExportSnippets.command
+
