@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>init_testflight</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifdef EnableTestFlight
+    DebugLog(@"TestFlight is Enabled");
+    [TestFlight takeOff:@"INSERT_TEAM_TOKEN_HERE"];
+    TFLog(@"Application started");
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+#pragma GCC diagnostic warning "-Wdeprecated-declarations"
+#else
+    DebugLog(@"TestFlight is NOT Enabled");
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EAFB25DE-FE39-4159-BFC4-296E93A2E7B2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Initializes TestFlight</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Initialize TestFlight</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
