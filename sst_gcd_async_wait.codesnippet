@@ -10,6 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>
+// do not use
 dispatch_queue_t &lt;#queue#&gt; = dispatch_queue_create("&lt;#queue#&gt;", NULL);
     dispatch_async(queue, ^ {
         // do async work
