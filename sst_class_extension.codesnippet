@@ -9,7 +9,7 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark -  Class Extension
+	<string>#pragma mark - Class Extension
 #pragma mark - 
 
 @interface &lt;#Class Name#&gt; ()
