@@ -3,24 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>nsassert_blocks</string>
+	<string>define_run_on_main_queue</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSCAssert(&lt;# assertion #&gt;), @"&lt;# error #&gt;");</string>
+	<string>#define gcd_run_on_main_queue(block) \
+    if ([NSThread isMainThread]) \
+        block(); \
+    else \
+        dispatch_sync(dispatch_get_main_queue(), block); \
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FF000C7C-5FCE-4960-9ABB-51507F2CC240</string>
+	<string>E0ED4CE8-5755-4F3F-B698-F1F0426B1A35</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Safely run NSAssert inside a Block (self retain cycle)</string>
+	<string>Macro to run block safely on main queue (put in .pch)</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSAssert for Blocks</string>
+	<string>GCD: Run on Main Queue</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
