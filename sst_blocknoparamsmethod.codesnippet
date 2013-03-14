@@ -9,9 +9,11 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)())&lt;#returnBlock#&gt; {
+	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)())completionBlock {
     
-    &lt;#returnBlock#&gt;();
+    if (completionBlock != nil) {
+        ￼completionBlock();
+    }
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>

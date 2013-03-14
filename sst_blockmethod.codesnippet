@@ -13,10 +13,9 @@
     NSString *message = nil;
     NSError *error = nil;
     
-    // Note: run in an async queue
-    
-    &lt;#returnBlock#&gt;(message, error);
-    
+    if (&lt;#returnBlock#&gt; != nil) {
+        &lt;#returnBlock#&gt;(message, error);
+    }
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>
