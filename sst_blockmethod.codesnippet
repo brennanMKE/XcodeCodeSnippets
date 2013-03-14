@@ -13,7 +13,7 @@
     NSString *message = nil;
     NSError *error = nil;
     
-    if (&lt;#returnBlock#&gt; != nil) {
+    if (&lt;#returnBlock#&gt;) {
         &lt;#returnBlock#&gt;(message, error);
     }
 }

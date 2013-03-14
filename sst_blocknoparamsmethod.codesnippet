@@ -11,8 +11,8 @@
 	<key>IDECodeSnippetContents</key>
 	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)())completionBlock {
     
-    if (completionBlock != nil) {
-        ￼completionBlock();
+    if (completionBlock) {
+        completionBlock();
     }
 }
 </string>
