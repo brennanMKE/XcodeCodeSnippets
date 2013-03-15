@@ -11,6 +11,10 @@ case "$1" in
         cp sst_*.codesnippet ~/Library/Developer/Xcode/UserData/CodeSnippets/
         popd
         ;;
+    list)
+        echo Listing...
+        ls ~/Library/Developer/Xcode/UserData/CodeSnippets/sst_*.codesnippet
+        ;;
     find)
         echo Finding...
         ls ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet | grep -v sst_
@@ -34,7 +38,7 @@ case "$1" in
         popd
         ;;
     *)
-        echo "Usage: `basename $0` { update | find | import | export | clear }"
+        echo "Usage: `basename $0` { update | list | find | import | export | clear }"
         ;;
 esac
 
