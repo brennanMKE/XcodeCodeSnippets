@@ -12,6 +12,7 @@
 	<string>
 UIImage *image = [UIImage imageWithIdentifier:@"&lt;#CacheKey#&gt;" forSize:CGSizeMake(&lt;#width#&gt;, &lt;#height#&gt;) andDrawingBlock:^{
 
+    // insert code from PaintCode here
     &lt;#code#&gt;
         
     }];
