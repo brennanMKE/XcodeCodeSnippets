@@ -3,21 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>maassert</string>
+	<string>block_peform_after_delay</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>MAAssert(&lt;#condition#&gt;, @"&lt;#failure message#&gt;");</string>
+	<string>
+- (void)performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC), dispatch_get_main_queue(), block);
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F7A2B7BA-126D-456A-9C73-3A4439171694</string>
+	<string>851D7157-973A-4DA0-B7EE-8C30EBBA1F3B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>MAAssert</string>
+	<string>Executes a block after a delay</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MAAssert</string>
+	<string>Perform Block After Delay</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

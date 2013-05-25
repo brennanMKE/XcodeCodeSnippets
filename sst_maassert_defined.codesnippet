@@ -9,15 +9,23 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
+	<string>#ifndef NS_BLOCK_ASSERTIONS
+
 // Credit: http://sstools.co/maassert
 #define MAAssert(expression, ...) \
 do { \
-    if(!(expression)) { \
-        NSLog(@"Assertion failure: %s in %s on line %s:%d. %@", #expression, __func__, __FILE__, __LINE__, [NSString stringWithFormat: @"" __VA_ARGS__]); \
-        abort(); \
-    } \
+if(!(expression)) { \
+NSLog(@"Assertion failure: %s in %s on line %s:%d. %@", #expression, __func__, __FILE__, __LINE__, [NSString stringWithFormat: @"" __VA_ARGS__]); \
+abort(); \
+} \
 } while(0)
+
+#else
+
+#define MAAssert(expression, ...)
+
+#endif
+
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3C64FD23-12DC-409B-BDE5-C85F9892442E</string>
@@ -30,6 +38,6 @@ do { \
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

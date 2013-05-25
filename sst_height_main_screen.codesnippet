@@ -9,7 +9,7 @@
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[UIScreen mainScreen] bounds].size.height</string>
+	<string>CGRectGetHeight([[UIScreen mainScreen] bounds])</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6839ECCB-9B00-4417-9763-3A5780CA25A8</string>
 	<key>IDECodeSnippetLanguage</key>

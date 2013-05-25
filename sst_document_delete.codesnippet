@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>document_delete</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)deleteDocument:(UIDocument *)document withCompletionBlock:(void (^)())completionBlock {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        
+        NSError *fileCoordinatorError = nil;
+        
+        [[[NSFileCoordinator alloc] initWithFilePresenter:nil] coordinateWritingItemAtURL:document.fileURL options:NSFileCoordinatorWritingForDeleting error:&amp;fileCoordinatorError byAccessor:^(NSURL *newURL) {
+
+            // extra check to ensure coordinator is not running on main thread
+            NSAssert(![NSThread isMainThread], @"Must be not be on main thread");
+
+            // create a fresh instance of NSFileManager since it is not thread-safe
+            NSFileManager *fileManager = [[NSFileManager alloc] init];
+            NSError *error = nil;
+            if (![fileManager removeItemAtURL:newURL error:&amp;error]) {
+                NSLog(@"Error: %@", error);
+                // TODO handle the error
+            }
+            
+            if (completionBlock) {
+                completionBlock();
+            }
+        }];
+    });
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>67823B27-1A69-4AB1-B341-7830FBA0FD62</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Delete Document</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Delete Document</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
