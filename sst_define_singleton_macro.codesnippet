@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>define_singleton_macro</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// Adapted to ARC from Matt Gallagher of CocoaWithLove
+// Insert into in .pch to use in a project
+#define SYNTHESIZE_SINGLETON_FOR_HEADER(classname) \
++ (classname *)sharedInstance;
+
+#define SYNTHESIZE_SINGLETON_FOR_CLASS(classname) \
+ \
+    static classname *sharedInstance = nil; \
+    static dispatch_once_t onceToken; \
+ \
++ (classname *)sharedInstance \
+{ \
+    dispatch_once(&amp;onceToken, ^{ \
+        sharedInstance = [[classname alloc] init]; \
+    }); \
+	 \
+	return sharedInstance; \
+} \
+ \</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>95A017B9-D632-4E2C-8E19-A54D758299CF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates a macro to generate a singleton instance</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Define Singleton Macro</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
