@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>method</string>
+	<string>string_starts_with</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt; {
-    // TODO implement
-}</string>
+	<string>[&lt;#string#&gt; hasPrefix:@"&lt;#match#&gt;"]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>576C72F9-38CC-48C4-B6F5-34B5FABC1A09</string>
+	<string>1C2F9CE0-6310-49F6-8213-976AC802DECF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Create a method</string>
+	<string>String Starts With</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Method</string>
+	<string>String Starts With</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

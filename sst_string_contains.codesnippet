@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>method</string>
+	<string>string_contains</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt; {
-    // TODO implement
-}</string>
+	<string>[&lt;#string#&gt; rangeOfString:@"&lt;#match#&gt;"].location != NSNotFound</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>576C72F9-38CC-48C4-B6F5-34B5FABC1A09</string>
+	<string>4398F559-46FA-4C05-BB96-ABD0256519A9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Create a method</string>
+	<string>String Contains</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Method</string>
+	<string>String Contains</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
