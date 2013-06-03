@@ -9,8 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[NSNotificationCenter defaultCenter] postNotificationName:&lt;#notification name#&gt; 
-                                                    object:&lt;#nil or userInfo dictionary#&gt;];</string>
+	<string>[[NSNotificationCenter defaultCenter] postNotificationName:&lt;#notification name#&gt; object:&lt;#nil or userInfo dictionary#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>425207C2-4AF9-42C7-A302-DFF77399B2B8</string>
 	<key>IDECodeSnippetLanguage</key>
