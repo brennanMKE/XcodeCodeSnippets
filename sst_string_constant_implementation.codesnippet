@@ -3,25 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>animfullblock</string>
+	<string>string_constant_implementation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIViewAnimationOptions options = UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction;
-[UIView animateWithDuration:&lt;#duration#&gt; delay:0.0 options:options animations:^{
-    &lt;#code#&gt;
-            } completion:^(BOOL finished) {
-            }];</string>
+	<string>NSString * const &lt;#name#&gt; = @"&lt;#value#&gt;";</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>37E53BB3-2CE0-4F0F-93D7-8CE9D5B062E5</string>
+	<string>BE56C7F0-7CBD-424C-856F-DDCFA5BB8CA7</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Animation block with all parameters</string>
+	<string>String Constant Implementation</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Animation Block with Options</string>
+	<string>String Constant Implementation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
