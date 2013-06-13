@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dl_object</string>
+	<string>height_for_vc_view</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>StringOrComment</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DebugLog(@"%@", &lt;#object#&gt;);</string>
+	<string>CGRectGetHeight([[UIScreen mainScreen] self.view.frame])</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>28C73FC1-6D93-4C81-B20D-90456F0AFD4F</string>
+	<string>847B2AC0-06F9-4C19-A83A-B8B952062E71</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Log a message when Debug is defined</string>
+	<string>Height for View Controller's View</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DebugLog with object</string>
+	<string>Height for View Controller's View</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

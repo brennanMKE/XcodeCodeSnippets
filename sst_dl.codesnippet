@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>Write to the console if debug is enabled</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DebugLog</string>
+	<string>DebugLog with string</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
