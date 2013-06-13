@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>void (^&lt;#blockName#)(NSData *data) =  ^void (NSData *data, NSError *error) {      
+	<string>void (^&lt;#blockName#&gt;)(NSData *data) =  ^void (NSData *data, NSError *error) {      
             };</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D88E94F8-5D69-436B-B4A5-744E0BE9C7AA</string>
