@@ -3,22 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>draw_image_with_block</string>
+	<string>draw_image</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-UIImage *image = [UIImage imageWithIdentifier:@"&lt;#CacheKey#&gt;" forSize:CGSizeMake(&lt;#width#&gt;, &lt;#height#&gt;) andDrawingBlock:^{
+	<string>UIGraphicsBeginImageContextWithOptions(CGSizeMake(&lt;#width#&gt;￼￼, &lt;#height#&gt;￼￼), NO, 0.0f);
 
     // insert code from PaintCode here
-    &lt;#code#&gt;
-        
-    }];
-    
-return [UIImage imageWithImage:image scaledToSize:CGSizeMake(&lt;#scalewidth#&gt;, &lt;#scaleheight#&gt;)];
-</string>
+    ￼￼&lt;#code#&gt;
+
+    image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    //use image</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>801AC0C2-656A-4E2B-86AD-474643176268</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -26,7 +24,7 @@ return [UIImage imageWithImage:image scaledToSize:CGSizeMake(&lt;#scalewidth#&gt
 	<key>IDECodeSnippetSummary</key>
 	<string>Returns image from drawing code</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Image Block</string>
+	<string>Image Draw</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

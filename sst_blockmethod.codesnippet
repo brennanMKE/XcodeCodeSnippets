@@ -9,12 +9,12 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)(NSString *message, NSError *error))&lt;#returnBlock#&gt; {
+	<string>- (void)&lt;#methodName#&gt;WithCompletionBlock:(void (^)(NSString *message, NSError *error))completionBlock {
     NSString *message = nil;
     NSError *error = nil;
     
-    if (&lt;#returnBlock#&gt;) {
-        &lt;#returnBlock#&gt;(message, error);
+    if (completionBlock) {
+        completionBlock(message, error);
     }
 }
 </string>
@@ -23,9 +23,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Method using block feature</string>
+	<string>Method using block callback</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block: Method</string>
+	<string>Block: Method with parameters</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
