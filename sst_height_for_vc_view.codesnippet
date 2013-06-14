@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>CGRectGetHeight([[UIScreen mainScreen] self.view.frame])</string>
+	<string>CGRectGetHeight(self.view.frame)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>847B2AC0-06F9-4C19-A83A-B8B952062E71</string>
 	<key>IDECodeSnippetLanguage</key>
