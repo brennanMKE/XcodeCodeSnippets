@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>error_create</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSDictionary *userInfo = @{NSLocalizedDescriptionKey : @"&lt;#error description#&gt;"};
+NSError *error = [NSError errorWithDomain:@"&lt;#domain#&gt;" code:&lt;#errorcode#&gt; userInfo:userInfo];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2BEFBCF2-40F5-4679-A1A7-850EC9942B3E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates an NSError instance with User Info dictionary</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Error creation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
