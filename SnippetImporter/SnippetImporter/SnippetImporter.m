@@ -12,16 +12,7 @@
 
 @implementation SnippetImporter
 
-//
-
 - (void)importSnippetsWithSourcePath:(NSString *)sourcePath destinationPath:(NSString *)destinationPath prefix:(NSString *)prefix {
-    
-// 1) get a list of files snippets which have not been named with prefix
-// 2) read in plist to get the shortcut
-// 3) ensure shortcut is not already in use
-// 4) copy file with prefix and shortcut and copy to output folder
-// 5) optionally delete orginal file
-// 6) optionally copy file to the source folder
     
     NSURL *sourceURL = [NSURL URLWithString:[self resolvePath:sourcePath]];
     NSURL *destinationURL = [NSURL URLWithString:[self resolvePath:destinationPath]];
@@ -71,7 +62,7 @@
                         printf("Snippet named '%s' already exists\n", [newName UTF8String]);
                     }
                     else {
-                        // do the rename and copy operation
+                        // do the move and copy operations
                         NSError *error = nil;
                         printf("Renaming %s to %s\n", [fileURL.lastPathComponent UTF8String], [newURL.lastPathComponent UTF8String]);
                         [[NSFileManager defaultManager] moveItemAtPath:fileURL.absoluteString toPath:newURL.absoluteString error:&error];
@@ -103,6 +94,13 @@
     const char *cpath = [expandedPath cStringUsingEncoding:NSUTF8StringEncoding];
     char *resolved = NULL;
     char *returnValue = realpath(cpath, resolved);
+    
+    if (returnValue == NULL && resolved != NULL) {
+        printf("Error with path: %s\n", resolved);
+        // if there is an error then resolved is set with the path which caused the issue
+        // returning nil will prevent further action on this path
+        return nil;
+    }
     
 //    DebugLog(@"resolved: %s", resolved);
 //    DebugLog(@"returnValue: %s", returnValue);
