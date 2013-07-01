@@ -1,6 +1,7 @@
 #!/bin/sh
 
 GitRoot="`dirname \"$0\"`"
+Prefix="sst_"
 
 case "$1" in
     update)
@@ -8,33 +9,34 @@ case "$1" in
         pushd .
         cd ${GitRoot}
         git pull
-        cp sst_*.codesnippet ~/Library/Developer/Xcode/UserData/CodeSnippets/
+        cp ${Prefix}*.codesnippet ~/Library/Developer/Xcode/UserData/CodeSnippets/
         popd
         ;;
     list)
         echo Listing...
-        ls ~/Library/Developer/Xcode/UserData/CodeSnippets/sst_*.codesnippet
+        ls ~/Library/Developer/Xcode/UserData/CodeSnippets/${Prefix}*.codesnippet
         ;;
     find)
         echo Finding...
-        ls ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet | grep -v sst_
+ls ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet | grep -v ${Prefix}
         ;;
     import)
         echo Importing...
         pushd .
         cd ${GitRoot}
-        cp ~/Library/Developer/Xcode/UserData/CodeSnippets/sst_*.codesnippet .
+        cp ~/Library/Developer/Xcode/UserData/CodeSnippets/${Prefix}*.codesnippet .
+        ./bin/snippetimporter ~/Library/Developer/Xcode/UserData/CodeSnippets . ${Prefix}
         popd
         ;;
     export)
         echo Exporting...
-        cp ${GitRoot}/sst_*.codesnippet ~/Library/Developer/Xcode/UserData/CodeSnippets/
+        cp ${GitRoot}/${Prefix}*.codesnippet ~/Library/Developer/Xcode/UserData/CodeSnippets/
         ;;
     clear)
         echo Clearing...
         pushd .
         cd ${GitRoot}
-        rm ~/Library/Developer/Xcode/UserData/CodeSnippets/sst_*.codesnippet
+        rm ~/Library/Developer/Xcode/UserData/CodeSnippets/${Prefix}*.codesnippet
         popd
         ;;
     *)

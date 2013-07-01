@@ -3,21 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>main_thread_assert</string>
+	<string>gcd_wait_for_blocks</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>MAAssert([NSThread isMainThread], @"Must be main thread");</string>
+	<string>    @autoreleasepool {
+        dispatch_queue_t queue = dispatch_queue_create("&lt;#queue name#&gt;", 0);
+        dispatch_sync(queue,  ^(){
+            // insert sync code
+        });
+        dispatch_async(queue, ^(){
+            // insert async code
+        });
+        // wait for queue
+        dispatch_barrier_sync(queue, ^(){
+            // insert completion code
+        });
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>777D162A-E617-40C6-9EA0-B6F2D5A34657</string>
+	<string>BB991218-28E1-4ED5-BEB5-5D086001A01F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Assert the current thread is the main thread</string>
+	<string>GCD: Wait for Blocks</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Main Thread Assertion</string>
+	<string>GCD: Wait for Blocks</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

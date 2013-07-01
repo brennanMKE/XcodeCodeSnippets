@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:SnippetImporter/SnippetImporter.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Scripts">
+      <FileRef
+         location = "group:ExportSnippets.command">
+      </FileRef>
+      <FileRef
+         location = "group:ImportSnippets.command">
+      </FileRef>
+      <FileRef
+         location = "group:snippets.sh">
+      </FileRef>
+      <FileRef
+         location = "group:FindNewSnippets.command">
+      </FileRef>
+      <FileRef
+         location = "group:GitUpdate.command">
+      </FileRef>
+      <FileRef
+         location = "group:ClearSnippets.command">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Snippets">
+      <FileRef
+         location = "group:sst_animblock.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_animfullblock.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_assert_main_thread.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_block_named_variable.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_block_peform_after_delay.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_blockmethod.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_blocknoparamsmethod.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_class_extension.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_date_is_after.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_debuglog_method.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_debuglog.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_debuglogd.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_define_gcd_run_on_main_queue.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_define_macros.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_define_singleton_macro.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_deprecated.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_directory_exists.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_dl_error.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_dl.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_document_delete.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_draw_image_method.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_draw_image_with_block.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_file_exists.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_fmtdatetime.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_gcd_async_wait.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_gcd_asyncqueue.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_gcd_default_priority_queue.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_gcd_dispatchafter.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_gcd_getqueuelabel.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_gcd_high_priority_queue.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_gcd_low_priority_queue.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_gcd_main_queue.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_height_for_vc_view.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_height_main_screen.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_init_testflight.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_isBackgroundSupported.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_localized_string.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_log_fonts.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_log_mode.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_log.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_maassert_defined.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_maassert.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_method.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_block_observer_property.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_handler.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_named_block.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_observe.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_observer_property.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_observewithblock.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_post_with_userinfo.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_post.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_remove_block_observer.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_notification_remove.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_nsassert_blocks.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_nsassert.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_pragma_unused.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_prop.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_section_header.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_string_constant_header.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_string_constant_implementation.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_string_contains.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_string_starts_with.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_strong_self.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_suppress_deprecation_warnings.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_tableview_delegates.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_udid_create.codesnippet">
+      </FileRef>
+      <FileRef
+         location = "group:sst_weak_self.codesnippet">
+      </FileRef>
+   </Group>
+</Workspace>

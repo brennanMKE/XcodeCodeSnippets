@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        ￼&lt;#code#&gt;
+    &lt;#code#&gt;
 });</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>267FDAC5-B716-4C0E-A460-9170E2A86857</string>

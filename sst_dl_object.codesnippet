@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>main_thread_assert</string>
+	<string>dl_object</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>MAAssert([NSThread isMainThread], @"Must be main thread");</string>
+	<string>DebugLog(@"&lt;#name#&gt;: %@", &lt;#name#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>777D162A-E617-40C6-9EA0-B6F2D5A34657</string>
+	<string>91F856F9-591E-400A-9715-82B56B975104</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Assert the current thread is the main thread</string>
+	<string>DebugLog an Object</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Main Thread Assertion</string>
+	<string>DebugLog an Object</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

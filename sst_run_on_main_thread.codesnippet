@@ -3,21 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>main_thread_assert</string>
+	<string>run_on_main_thread</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>MAAssert([NSThread isMainThread], @"Must be main thread");</string>
+	<string>void runOnMainQueueWithoutDeadlocking(void (^block)(void))
+{
+    if ([NSThread isMainThread])
+    {
+        block();
+    }
+    else
+    {
+        dispatch_sync(dispatch_get_main_queue(), block);
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>777D162A-E617-40C6-9EA0-B6F2D5A34657</string>
+	<string>C7381FC6-95D1-466C-AA14-0C18EE7EF5C0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Assert the current thread is the main thread</string>
+	<string>Run on Main Thread</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Main Thread Assertion</string>
+	<string>Run on Main Thread</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
