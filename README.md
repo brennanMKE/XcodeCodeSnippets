@@ -1,7 +1,5 @@
 # Xcode 4 Code Snippets
 
---------------------------------------
-
 I've created or collected the following code snippets to speed up my work. My snippets focus on a few areas.
 
 * animation
