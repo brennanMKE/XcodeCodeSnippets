@@ -3,31 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>init_testflight</string>
+	<string>prepareforsegue</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#ifdef EnableTestFlight
-DebugLog(@"TestFlight is Enabled");
-[TestFlight takeOff:@"INSERT_TEAM_TOKEN_HERE"];
-TFLog(@"Application started");
-[TestFlight setDeviceIdentifier:[[[UIDevice currentDevice] identifierForVendor] UUIDString]];
-#else
-DebugLog(@"TestFlight is NOT Enabled");
-#endif</string>
+	<string>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DebugLog(@"segue: %@", segue.identifier);
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EAFB25DE-FE39-4159-BFC4-296E93A2E7B2</string>
+	<string>EBDD1F6A-F972-48CD-8F2B-4FB8192ED7E4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Initializes TestFlight</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Initialize TestFlight</string>
+	<string>Prepare for Segue</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

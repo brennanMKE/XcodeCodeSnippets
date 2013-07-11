@@ -3,31 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>init_testflight</string>
+	<string>viewwillappear</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#ifdef EnableTestFlight
-DebugLog(@"TestFlight is Enabled");
-[TestFlight takeOff:@"INSERT_TEAM_TOKEN_HERE"];
-TFLog(@"Application started");
-[TestFlight setDeviceIdentifier:[[[UIDevice currentDevice] identifierForVendor] UUIDString]];
-#else
-DebugLog(@"TestFlight is NOT Enabled");
-#endif</string>
+	<string>- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EAFB25DE-FE39-4159-BFC4-296E93A2E7B2</string>
+	<string>8B1BC981-A05D-4520-B25E-089D8F5813AF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Initializes TestFlight</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Initialize TestFlight</string>
+	<string>View Will Appear</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
