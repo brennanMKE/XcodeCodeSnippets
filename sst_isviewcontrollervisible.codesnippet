@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>viewdiddisappear</string>
+	<string>isviewcontrollervisible</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}</string>
+	<string>    if (self.isViewLoaded &amp;&amp; self.view.window) {
+        // viewController is visible
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0F6D999A-9BCF-45FA-A3AC-63782D9B858A</string>
+	<string>723109C5-8693-4086-B0BE-41EAC0331B7A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>View Did Disappear</string>
+	<string>Is View Controller Visible</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
