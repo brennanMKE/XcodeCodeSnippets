@@ -18,7 +18,7 @@ case "$1" in
         ;;
     find)
         echo Finding...
-ls ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet | grep -v ${Prefix}
+        ls ~/Library/Developer/Xcode/UserData/CodeSnippets/*.codesnippet | grep -v ${Prefix}
         ;;
     import)
         echo Importing...
