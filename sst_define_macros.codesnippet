@@ -12,7 +12,7 @@
 	<string>#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 #define LOG_FRAME(label, frame) DebugLog(@"%@: %f, %f, %f, %f", label, frame.origin.x, frame.origin.y, frame.size.width, frame.size.height)
-#define LOG_SIZE(label, size) DebugLog(@"%f, %f, %f", label, size.width, size.height)
+#define LOG_SIZE(label, size) DebugLog(@"%@, %f, %f", label, size.width, size.height)
 #define LOG_POINT(label, point) DebugLog(@"%@: %f, %f", label, point.x, point.y)
 #define LOG_OFFSET(label, offset) DebugLog(@"%@: %f, %f", label, offset.x, offset.y)
 #define LOG_INSET(label, inset) DebugLog(@"%@: %f, %f, %f, %f", label, inset.top, inset.left, inset.bottom, inset.right)</string>
