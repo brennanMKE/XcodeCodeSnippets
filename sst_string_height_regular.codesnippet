@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>string_height_regular</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    CGSize size = [text sizeWithFont:&lt;#font#&gt;
+               constrainedToSize:CGSizeMake(&lt;#max width#&gt;, CGFLOAT_MAX))
+                   lineBreakMode:NSLineBreakByTruncatingTail];
+    CGFloat height = size.height;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DEB1804D-42AF-4CD4-9338-7A160C9CA5D7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>String Height Regular</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>String Height Regular</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
