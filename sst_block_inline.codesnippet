@@ -3,27 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>string_height_regular</string>
+	<string>block_inline</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSStringDrawingOptions options = NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
-NSDictionary *attributes = @{ NSFontAttributeName : &lt;#font#&gt; };
-CGSize size = [&lt;#text#&gt; boundingRectWithSize:CGSizeMake(&lt;#max width#&gt;, CGFLOAT_MAX) options:options attributes:attributes context:nil].size;
-CGFloat height = size.height;</string>
+	<string>//    return_type (^blockName)(var_type) = ^return_type (var_type varName)    
+&lt;#returnType#&gt; (^&lt;#blockName#&gt;)(&lt;#varType#&gt;) = ^&lt;#returnType#&gt; (&lt;#varType#&gt; &lt;#varName#&gt;) {
+    return &lt;#code#&gt;;
+    };
+
+// &lt;#blockName#&gt;(&lt;#variable#&gt;);
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DEB1804D-42AF-4CD4-9338-7A160C9CA5D7</string>
+	<string>798E6B0A-8771-4405-9E71-0ABDBA13F1D4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>String Height Regular</string>
+	<string>Declare an inline block (anonymous function)</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>String Height Regular</string>
+	<string>Inline Block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

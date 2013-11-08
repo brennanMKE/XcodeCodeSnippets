@@ -9,8 +9,8 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    CGRect rect = [attribuedString boundingRectWithSize:CGSizeMake(&lt;#max width#&gt;, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
-    CGFloat height = CGRectGetHeight(rect);</string>
+	<string>CGRect rect = [&lt;#attributed string#&gt; boundingRectWithSize:CGSizeMake(&lt;#max width#&gt;, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
+CGFloat height = CGRectGetHeight(rect);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7484A877-5452-4241-9116-1423B122EC67</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -22,6 +22,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
