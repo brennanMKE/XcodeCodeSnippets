@@ -19,6 +19,7 @@
 #define DebugLog(message, ...)
 
 #endif
+
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E2F44991-FFC7-4DCD-9AC6-72FCBCAEEB79</string>

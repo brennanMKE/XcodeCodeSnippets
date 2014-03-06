@@ -1,4 +1,4 @@
-# Xcode 4 Code Snippets
+# Xcode Code Snippets
 
 I've created or collected the following code snippets to speed up my work. My snippets focus on a few areas.
 
@@ -33,7 +33,13 @@ This project and the new importer script are built to help with anyone manage th
 
 I found that copying a snippet to create a modified version without changing the Guid value causes Xcode to crash. I expect a conflicting keyword would also be a problem. The import/export process to sync snippet collections should handle these details to ensure different files do not cause conflicts. This would likely require a command-line utility or a more advanced shell script.
 
-### Brennan Stehling
-#### SmallSharpTools.com
+## License
 
-Find me on [Twitter](http://twitter.com/smallsharptools) and [App.net](http://alpha.app.net/smallsharptools).
+CircleButton is available under the MIT license. See the LICENSE file for more info.
+
+## Contact
+
+Brennan Stehling  
+[SmallSharpTools](http://www.smallsharptools.com/)  
+[@smallsharptools](https://twitter.com/smallsharptools) (Twitter)  
+

@@ -25,7 +25,6 @@ abort(); \
 #define MAAssert(expression, ...)
 
 #endif
-
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3C64FD23-12DC-409B-BDE5-C85F9892442E</string>
