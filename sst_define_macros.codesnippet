@@ -17,7 +17,9 @@
 #define LOG_SIZE(label, size) DebugLog(@"%@, %f, %f", label, size.width, size.height)
 #define LOG_POINT(label, point) DebugLog(@"%@: %f, %f", label, point.x, point.y)
 #define LOG_OFFSET(label, offset) DebugLog(@"%@: %f, %f", label, offset.x, offset.y)
-#define LOG_INSET(label, inset) DebugLog(@"%@: %f, %f, %f, %f", label, inset.top, inset.left, inset.bottom, inset.right)</string>
+#define LOG_INSET(label, inset) DebugLog(@"%@: %f, %f, %f, %f", label, inset.top, inset.left, inset.bottom, inset.right)
+#define LOG_INDEXPATH(label, indexPath) DebugLog(@"%@: %li, %li", label, indexPath.section, indexPath.row)
+#define LOG_INDEXPATH2(label, indexPath) DebugLog(@"%@: %li, %li", label, indexPath.section, indexPath.item)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B04E18FF-467E-409B-9902-ABF9321F90E3</string>
 	<key>IDECodeSnippetLanguage</key>

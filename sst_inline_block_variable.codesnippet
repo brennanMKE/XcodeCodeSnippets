@@ -3,34 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>debuglogd</string>
+	<string>inline_block_variable</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// Disables log messages when debugging is turned off
-#ifndef NDEBUG
-
-#define DebugLog(message, ...) NSLog(@"%s: " message, __PRETTY_FUNCTION__, ##__VA_ARGS__)
-
-#else
-
-#define DebugLog(message, ...)
-
-#endif
-</string>
+	<string>
+    void (^&lt;#variable name#&gt;)(void) = ^void() {
+        &lt;#insert code here#&gt;
+    };
+    </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E2F44991-FFC7-4DCD-9AC6-72FCBCAEEB79</string>
+	<string>0FB81DB7-B864-420D-B95A-FD1B1519C1EE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Macro defined in .pch file</string>
+	<string>Create an inline block variable which is reusable</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DebugLog Defined</string>
+	<string>Inline completion block variable</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

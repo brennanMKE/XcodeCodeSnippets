@@ -15,8 +15,12 @@
     dispatch_once(&amp;onceToken, ^{
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(&lt;#width#&gt;, &lt;#height#&gt;), NO, 0.0f);
         
-        // insert code from PaintCode here
-        &lt;#code#&gt;
+        // START DRAWING
+        {
+            // insert code from PaintCode here
+            &lt;#code#&gt;
+        }
+        // END DRAWING
         
         image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
