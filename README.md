@@ -35,7 +35,7 @@ I found that copying a snippet to create a modified version without changing the
 
 ## License
 
-CircleButton is available under the MIT license. See the LICENSE file for more info.
+Xcode Code Snippets are available under the MIT license. See the LICENSE file for more info.
 
 ## Contact
 
