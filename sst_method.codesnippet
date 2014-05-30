@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (void)&lt;#methodName#&gt; {
-    // TODO implement
+    // TODO: implement
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>576C72F9-38CC-48C4-B6F5-34B5FABC1A09</string>
