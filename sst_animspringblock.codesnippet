@@ -3,28 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>animfullblock</string>
+	<string>animspringblock</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UIViewAnimationOptions options = UIViewAnimationOptionBeginFromCurrentState;
-[UIView animateWithDuration:&lt;#duration#&gt; delay:&lt;#delay#&gt; options:options animations:^{
+[UIView animateWithDuration:&lt;#duration#&gt; delay:&lt;#delay#&gt; usingSpringWithDamping:&lt;#damping#&gt; initialSpringVelocity:&lt;#velocity#&gt; options:options animations:^{
     &lt;#code#&gt;
-            } completion:^(BOOL finished) {
-            }];</string>
+} completion:^(BOOL finished) {
+    if (finished) {
+        
+    }
+}];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>37E53BB3-2CE0-4F0F-93D7-8CE9D5B062E5</string>
+	<string>B3F59F46-E439-468F-A459-69FDCF4CCA7C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Animation block with all parameters</string>
+	<string>Animation block with Springing</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Animation Block with Options</string>
+	<string>Animation Block with Springing</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
