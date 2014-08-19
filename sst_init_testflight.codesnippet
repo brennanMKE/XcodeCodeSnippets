@@ -11,8 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>#ifdef EnableTestFlight
 DebugLog(@"TestFlight is Enabled");
-[TestFlight setDeviceIdentifier:[[[UIDevice currentDevice] identifierForVendor] UUIDString]];
-[TestFlight takeOff:@"INSERT_TEAM_TOKEN_HERE"];
+[TestFlight takeOff:@"&lt;#team token#&gt;"];
 TFLog(@"Application started");
 #else
 DebugLog(@"TestFlight is NOT Enabled");

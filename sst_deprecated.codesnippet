@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__attribute__ ((deprecated))</string>
+	<string>__deprecated</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7C9D3872-0D01-4D11-ADFC-5E857E3E7840</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -9,7 +9,7 @@
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[NSFileManager defaultManager] fileExistsAtPath:url.path]</string>
+	<string>[[NSFileManager defaultManager] fileExistsAtPath:&lt;#path#&gt;]</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>CD5427A1-3F45-4023-BC9B-6AC66320D83D</string>
 	<key>IDECodeSnippetLanguage</key>

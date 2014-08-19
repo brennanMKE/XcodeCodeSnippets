@@ -10,8 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>
-NSDictionary *userInfo = [NSDictionary dictionaryWithObject:&lt;#object#&gt; 
-                                                     forKey:&lt;#key#&gt;];
+NSDictionary *userInfo = @{&lt;#key#&gt; : &lt;#value#&gt;};
 [[NSNotificationCenter defaultCenter] postNotificationName:&lt;#name#&gt; 
                                                             object:nil
                                                           userInfo:userInfo];</string>

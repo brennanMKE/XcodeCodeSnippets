@@ -28,10 +28,6 @@
     return cell;
 }
 
-- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    // TODO configure cell
-}
-
 #pragma mark - UITableViewDelegate
 #pragma mark -
 
