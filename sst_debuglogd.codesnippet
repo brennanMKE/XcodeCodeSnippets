@@ -11,13 +11,9 @@
 	<key>IDECodeSnippetContents</key>
 	<string>// Make sure NDEBUG is defined on Release
 #ifndef NDEBUG
-
 #define DebugLog(message, ...) NSLog(@"%s: " message, __PRETTY_FUNCTION__, ##__VA_ARGS__)
-
 #else
-
 #define DebugLog(message, ...)
-
 #endif
 </string>
 	<key>IDECodeSnippetIdentifier</key>
